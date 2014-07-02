@@ -18,5 +18,6 @@ Pod::Spec.new do |s|
   s.platform     = :ios, '4.0'
   s.source_files = '*.{h,m}'
   s.preserve_paths = 'libBaiduMobStat.a'
+  s.vendored_libraries = 'libBaiduMobStat.a'
   s.library = 'BaiduMobStat'
 end
