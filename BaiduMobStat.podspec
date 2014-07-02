@@ -13,7 +13,7 @@ Pod::Spec.new do |s|
                                   LICENSE
                    }
   s.author       = "Baidu"
-  s.source       = { :git => "git@github.com:KalicyZhou/BaiduMobStat.git" , :tag => "v#{s.version.to_s}" }
+  s.source       = { :git => "https://github.com/KalicyZhou/BaiduMobStat" , :tag => "v#{s.version.to_s}" }
 
   s.platform     = :ios, '4.0'
   s.source_files = '*.{h,m}'
