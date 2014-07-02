@@ -20,4 +20,5 @@ Pod::Spec.new do |s|
   s.vendored_libraries = 'libBaiduMobStat.a'
   s.libraries = 'stdc++', 'z.1.2.5', 'BaiduMobStat'
   s.frameworks = 'Adsupport','CoreLocation', 'SystemConfiguration', 'CoreTelephony'
+  s.xcconfig = { 'LIBRARY_SEARCH_PATHS' => "$(SRCROOT)/Pods/**" }
 end
