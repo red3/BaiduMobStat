@@ -19,4 +19,5 @@ Pod::Spec.new do |s|
   s.source_files = '*.{h,m}'
   s.vendored_libraries = 'libBaiduMobStat.a'
   s.library = 'BaiduMobStat'
+  s.frameworks = 'CoreLocation', 'SystemConfiguration', 'CoreTelephony'
 end
