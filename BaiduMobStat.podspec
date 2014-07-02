@@ -15,10 +15,10 @@ Pod::Spec.new do |s|
   s.author       = "Baidu"
   s.source       = { :git => "https://github.com/KalicyZhou/BaiduMobStat" , :tag => "v#{s.version.to_s}" }
 
-  s.platform     = :ios, '4.0'
+  s.platform     = :ios, '6.0'
   s.source_files = '*.{h,m}'
   s.vendored_libraries = 'libBaiduMobStat.a'
   s.libraries = 'stdc++', 'z.1.2.5', 'BaiduMobStat'
   s.frameworks = 'Adsupport','CoreLocation', 'SystemConfiguration', 'CoreTelephony'
-  s.xcconfig = { 'LIBRARY_SEARCH_PATHS' => "$(SRCROOT)/Pods/**" }
+  s.xcconfig = { 'LIBRARY_SEARCH_PATHS' => "$(SRCROOT)/Pods/BaiduMobStat/**" }
 end
