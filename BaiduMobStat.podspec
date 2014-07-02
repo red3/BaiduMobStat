@@ -18,6 +18,6 @@ Pod::Spec.new do |s|
   s.platform     = :ios, '4.0'
   s.source_files = '*.{h,m}'
   s.vendored_libraries = 'libBaiduMobStat.a'
-  s.library = 'stdc++', 'z.1.2.5', 'BaiduMobStat'
+  s.libraries = 'stdc++', 'z.1.2.5', 'BaiduMobStat'
   s.frameworks = 'Adsupport','CoreLocation', 'SystemConfiguration', 'CoreTelephony'
 end
