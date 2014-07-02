@@ -9,7 +9,7 @@
 #import <Foundation/Foundation.h>
 
 @interface AnalyticsLib : NSObject
-+ (void)startAnalytics;
++ (void)startAnalyticsWithAppId:(NSString*)appId;
 + (void) logEvent:(NSString*) eventId eventLabel:(NSString*)eventLabel;
 + (void) pageviewStartWithName:(NSString*) name;
 + (void) pageviewEndWithName:(NSString*) name;

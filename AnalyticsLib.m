@@ -11,7 +11,8 @@
 #import "Adsupport/ASIdentifierManager.h"
 
 @implementation AnalyticsLib
-+ (void)startAnalytics {
+
++ (void)startAnalyticsWithAppId:(NSString*)appId {
     BaiduMobStat* statTracker = [BaiduMobStat defaultStat];
     statTracker.enableExceptionLog = YES; // 是否允许截获并发送崩溃信息，请设置YES或者NO
     statTracker.logStrategy = BaiduMobStatLogStrategyAppLaunch;//根据开发者设定的时间间隔接口发送 也可以使用启动时发送策略
@@ -24,7 +25,7 @@
     
     statTracker.adid = adId;
     
-    [statTracker startWithAppId:@"28c8325e7b"];//设置您在mtj网站上添加的app的appkey
+    [statTracker startWithAppId:appId];//设置您在mtj网站上添加的app的appkey
 }
 
 + (void) logEvent:(NSString*) eventId eventLabel:(NSString*)eventLabel {
