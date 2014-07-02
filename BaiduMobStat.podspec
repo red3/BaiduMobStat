@@ -18,7 +18,5 @@ Pod::Spec.new do |s|
   s.platform     = :ios, '4.0'
   s.source_files = '*.{h,m}'
   s.preserve_paths = 'libBaiduMobStat.a'
-  s.library = 'stdc++', 'z.1.2.5', 'BaiduMobStat'
-  s.frameworks = 'CoreLocation', 'SystemConfiguration', 'CoreTelephony'
-  s.xcconfig  =  { 'LIBRARY_SEARCH_PATHS' => '"$(PODS_ROOT)/BaiduMobStat/Release$(EFFECTIVE_PLATFORM_NAME)"' }
+  s.library = 'BaiduMobStat'
 end
